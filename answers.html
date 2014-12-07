@@ -1,0 +1,262 @@
+<!--
+Google IO 2012/2013 HTML5 Slide Template
+
+Authors: Eric Bidelman <ebidel@gmail.com>
+         Luke Mahé <lukem@google.com>
+
+URL: https://code.google.com/p/io-2012-slides
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">-->
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+  <!--This one seems to work all the time, but really small on ipad-->
+  <!--<meta name="viewport" content="initial-scale=0.4">-->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="stylesheet" media="all" href="theme/css/default.css">
+  <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="theme/css/phone.css">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin"> 
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->
+  <script data-main="js/slides" src="js/require-1.0.8.min.js"></script>
+  <!--MathJax-->
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    TeX: {
+      extensions: ["cancel.js"],
+      Macros: {
+        d: '\\text{d}',
+        e: '\\mathbf{e}',
+        x: '\\mathbf{x}',
+        u: '\\mathbf{u}',
+        C: '\\mathbb{C}',
+        A: '\\mathbf{A}',
+        B: '\\mathbf{B}',
+        J: '\\mathbf{J}',
+        L: '\\mathcal{L}',
+        N: '\\mathcal{N}',
+        n: '\\mathbf{n}',
+        i: '\\text{i}',
+        divv: '\\mathop{\\rm div}\\nolimits',
+        curl: '\\mathop{\\rm curl}\\nolimits',
+      }
+    },
+    skipStartupTypeset: true
+  });
+  </script>
+
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+  });
+  </script>
+
+  <script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+    <script type="text/javascript">
+        document.addEventListener('slideenter', function(e) {
+            MathJax.Hub.Queue(["Typeset", MathJax.Hub, e.target]);
+            var next = document.getElementsByClassName('next')[0];
+            if (next) {
+                MathJax.Hub.Queue(["Typeset", MathJax.Hub, next]);
+            }
+            var past = document.getElementsByClassName('past')[0];
+            if (past) {
+                MathJax.Hub.Queue(["Typeset", MathJax.Hub, past]);
+            }
+        });
+  </script>
+	  <!--MathJax end-->
+	<script>
+    function setColor(btn){
+			var button = document.getElementById(btn);
+			var time = parseFloat(document.getElementById(btn).value);
+			setTimeout(function(){button.style.backgroundColor = "rgb(202, 60, 60)";}, time*1000);
+    }
+	</script>
+</head>
+<body style="opacity: 0">
+
+<slides class="layout-widescreen">
+
+  <slide class="title-slide segue light">
+    <aside class="gdbar"><img src="images/uio-logo-ny.png"></aside>
+    <!-- The content of this hgroup is replaced programmatically through the slide_config.json. -->
+    <hgroup class="auto-fadein">
+      <h1 data-config-title><!-- populated from slide_config.json --></h1>
+    </hgroup>
+  </slide>
+
+  <!-- Begin warm-up category -->
+  <slide class="torq">
+    <article>
+      <ul>
+        <li class="question">
+	  Which WWII politician responded this way?
+	  <p class="question">
+	      <a href="http://thinkexist.com/quotation/if_i_was_your_wife_sir-i-d_poison_you-madam-if/263849.html">
+	      Winston Churchill
+              </a>
+	</p>
+	</li>
+        <li class="question">
+		Fill in the physical quantity.
+	  <p class="question">
+	  	Electronvolt is a unit of
+	      <a href="http://en.wikipedia.org/wiki/Electronvolt">
+	      energy
+              </a>
+	</p>
+	</li>
+        <li class="question">
+		What kind of wood was the Kon-Tiki raft made of?
+	  <p class="question">
+	  	Main body of Kon-Tiki raft was made of
+	      <a href="http://en.wikipedia.org/wiki/Kon-Tiki">
+	      balsa
+              </a>
+	</p>
+	</li>
+        <li class="question">
+		What is the most frequent colour used on state flags? 
+	  <p class="question">
+	      <a href="http://www.crwflags.com/fotw/flags/xf-csts.html">
+	      Red
+              </a>
+	</p>
+	</li>
+        <li class="question">
+		  What was the name of his footwear sponsor?  
+	  <p class="question">
+	      <a href="http://en.wikipedia.org/wiki/Abebe_Bikila">
+	      Adidas
+              </a>
+	</p>
+	</li>
+      </ul>
+    </article>
+  </slide>
+
+  <!-- Begin 2014 category -->
+  <slide class="blue">
+    <article>
+      <ul>
+        <li class="question">
+	Which country won the most medals at the 2014 Winter Olympic games held
+	between 7th - 23rd February in Sochi?
+	  <p class="question">
+	      <a href="http://en.wikipedia.org/wiki/2014_Winter_Olympics">
+	      Russia
+              </a>
+	</p>
+	</li>
+        <li class="question">
+	What was the gift?
+	  <p class="question">
+	  Skiing wax <sup>*</sup>
+	</p>
+	</li>
+        <li class="question">
+      	What is the name of the song?
+	  <p class="question">
+	      <a href="http://www.theverge.com/2014/5/31/5767162/gangnam-style-2-billion-youtube-views">
+	      Gangnam Style by PSY
+              </a>
+	</p>
+	</li>
+        <li class="question">
+       	What is the name of the space probe from which the lander was launched.
+	  <p class="question">
+	      <a href="http://sci.esa.int/rosetta/">
+	      Rosetta
+              </a>
+	</p>
+	</li>
+        <li class="question">
+       	Name that country.
+	  <p class="question">
+	      <a href="http://en.wikipedia.org/wiki/Trafalgar_Square_Christmas_tree">
+	      Norway
+              </a>
+	</p>
+	</li>
+      </ul>
+    </article>
+  </slide>
+  
+  <!-- Begin Puzzle category -->
+  <slide class="green">
+    <article>
+      <ul>
+        <li class="question">
+	What is the length of the plotted curve? In $u$ units.
+	  <p class="question">
+	  $\frac{\pi}{2}(1+1+2+3+5)u$,
+	  <a href="http://mathworld.wolfram.com/GoldenSpiral.html">
+	      Golden spiral
+          </a>
+	</p>
+	</li>
+        <li class="question">
+	What is the name of the company?
+	  <p class="question">
+	<a
+		href="http://blogs.mathworks.com/cleve/2014/11/17/mathworks-logo-part-four-method-of-particular-solutions-generates-the-logo/?s_tid=Blog_Cleve_Category">
+	      MathWorks
+          </a>
+	</p>
+	</li>
+        <li class="question">
+	      What is the relation ($\lt, \gt, \geq, \dots$) between the
+	      largest and the smallest even prime number?
+	      <p class="question">
+	      Equality. The only even prime number is
+	      <a href="http://en.wikipedia.org/wiki/2_%28number%29">
+	      2
+	      </a>
+	      </p>
+	</li>
+        <li class="question">
+       	  What is the smallest number of measurements that guarantees that you 
+	  always identify the heavier ball?
+	  <p class="question">
+	  Two. Split the balls into groups of three. 
+	  </p>
+	</li>
+        <li class="question">
+	Is it true that for any $n$ it holds that
+	$V_n \lt V_{n+1}$ ?
+	<p class="question">
+	<a href=https://www.math.hmc.edu/funfacts/ffiles/30001.2-3.shtml>No</a>.
+       	$V_n = \frac{\pi^{n/2+1}}{\Gamma(n/2 + 1)}$,$\displaystyle \lim_{n\to\infty}V_n =
+	0$
+	</p>
+	</li>
+      </ul>
+    </article>
+  </slide>
+
+</slides>
+
+<script>
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-XXXXXXXX-1']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+<!--[if IE]>
+  <script src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js"></script>
+  <script>CFInstall.check({mode: 'overlay'});</script>
+<![endif]-->
+</body>
+</html>

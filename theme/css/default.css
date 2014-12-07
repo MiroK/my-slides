@@ -241,7 +241,7 @@ body {
 /* line 62, ../scss/default.scss */
 slides > slide {
   display: none;
-  font-family: 'Open Sans', Arial, sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-size: 26px;
   color: #797979;
   width: 900px;
@@ -295,9 +295,25 @@ slides > slide.far-next {
   display: none;
 }
 /* line 127, ../scss/default.scss */
+slides > slide.light {
+  background: #FFFFFF !important;
+}
 slides > slide.dark {
   background: #515151 !important;
 }
+
+slides > slide.green {
+  background: #33ce4d !important;
+}
+
+slides > slide.torq {
+  background: #33cace !important;
+}
+
+slides > slide.blue {
+  background: #3393ce !important;
+}
+
 /* line 135, ../scss/default.scss */
 slides > slide:not(.nobackground):before {
   font-size: 12pt;
@@ -305,7 +321,7 @@ slides > slide:not(.nobackground):before {
   position: absolute;
   bottom: 20px;
   left: 60px;
-  background: url(../../images/google_developers_icon_128.png) no-repeat 0 50%;
+  /*background: url(../../images/google_developers_icon_128.png) no-repeat 0 50%;*/
   -webkit-background-size: 30px 30px;
   -moz-background-size: 30px 30px;
   -o-background-size: 30px 30px;
@@ -317,7 +333,7 @@ slides > slide:not(.nobackground):before {
 /* line 147, ../scss/default.scss */
 slides > slide:not(.nobackground):after {
   font-size: 12pt;
-  content: attr(data-slide-num) "/" attr(data-total-slides);
+  /*content: attr(data-slide-num) "/" attr(data-total-slides);*/
   position: absolute;
   bottom: 20px;
   right: 60px;
@@ -596,7 +612,14 @@ button {
   -ms-border-radius: 3px;
   -o-border-radius: 3px;
   border-radius: 3px;
-  padding: 5px 8px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  right: 0;
+  left: -moz-initial;
+  left: initial;
+  top: 254px;
   outline: none;
   white-space: nowrap;
   -webkit-user-select: none;
@@ -604,7 +627,8 @@ button {
   user-select: none;
   cursor: pointer;
   text-shadow: 1px 1px white;
-  font-size: 10pt;
+  font-size: 20pt;
+  background: rgb(202, 60, 60);
 }
 
 /* line 400, ../scss/default.scss */
@@ -807,8 +831,9 @@ slide.fill {
 /* Size variants */
 /* line 535, ../scss/default.scss */
 article.smaller p, article.smaller ul {
-  font-size: 20px;
-  line-height: 24px;
+  margin-top: 20px;
+  font-size: 30px;
+  line-height: 34px;
   letter-spacing: 0;
 }
 /* line 541, ../scss/default.scss */
@@ -822,9 +847,35 @@ article.smaller pre {
   letter-spacing: 0;
 }
 /* line 550, ../scss/default.scss */
-article.smaller q {
-  font-size: 40px;
-  line-height: 48px;
+p.question {
+  font-size: 36px;
+  line-height: 40px;
+  letter-spacing: 0;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #993366;
+}
+p.question a{
+  color: #993366;
+}
+p.hint {
+  font-size: 28px;
+  font-style: italic;
+  line-height: 32px;
+  letter-spacing: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #A34775;
+}
+
+li.question {
+  color: #000000;
+}
+
+li.answer {
+  color: #993366;
+  text-align: center;
 }
 /* line 554, ../scss/default.scss */
 article.smaller q:before, article.smaller q:after {
@@ -1211,8 +1262,8 @@ article.smaller q:before, article.smaller q:after {
 /* ===== SLIDE CONTENT ===== */
 /* line 803, ../scss/default.scss */
 .logoslide img {
-  width: 383px;
-  height: 92px;
+  width: 1280px;
+  height: 480px;
 }
 
 /* line 809, ../scss/default.scss */
@@ -1222,7 +1273,7 @@ article.smaller q:before, article.smaller q:after {
 /* line 812, ../scss/default.scss */
 .segue h2 {
   color: #e6e6e6;
-  font-size: 60px;
+  font-size: 30px;
 }
 /* line 816, ../scss/default.scss */
 .segue h3 {
@@ -1256,6 +1307,35 @@ article.smaller q:before, article.smaller q:after {
   bottom: 80px;
   font-size: 24pt;
   line-height: 1.3;
+}
+
+aside.timebar {
+  height: 20px;
+  width: 40px;
+  top: -moz-initial;
+  top: initial;
+  bottom: 60px;
+  left: -1px;
+  -webkit-border-radius: 0 10px 10px 0;
+  -moz-border-radius: 0 10px 10px 0;
+  -ms-border-radius: 0 10px 10px 0;
+  -o-border-radius: 0 10px 10px 0;
+  border-radius: 0 10px 10px 0;
+  background: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #e6e6e6), color-stop(100%, #e6e6e6)) no-repeat;
+  background: -webkit-linear-gradient(left, #e6e6e6, #e6e6e6) no-repeat;
+  background: -moz-linear-gradient(left, #e6e6e6, #e6e6e6) no-repeat;
+  background: -o-linear-gradient(left, #e6e6e6, #e6e6e6) no-repeat;
+  background: linear-gradient(left, #e6e6e6, #e6e6e6) no-repeat;
+  -webkit-background-size: 0% 100%;
+  -moz-background-size: 0% 100%;
+  -o-background-size: 0% 100%;
+  background-size: 0% 100%;
+  -webkit-transition: all 0.5s ease-out;
+  -webkit-transition-delay: 0.5s;
+  -moz-transition: all 0.5s ease-out 0.5s;
+  -o-transition: all 0.5s ease-out 0.5s;
+  transition: all 0.5s ease-out 0.5s;
+  /* Better to transition only on background-size, but not sure how to do that with the mixin. */
 }
 
 /* line 848, ../scss/default.scss */
@@ -1322,6 +1402,12 @@ aside.gdbar img {
   margin: 8px 15px;
 }
 
+aside.gdbar input{
+  position: absolute;
+  width: 200px;
+  height: 97px;
+}
+
 /* line 888, ../scss/default.scss */
 .title-slide hgroup {
   bottom: 100px;
@@ -1349,14 +1435,42 @@ aside.gdbar img {
 
 /* line 913, ../scss/default.scss */
 .quote {
-  color: #e6e6e6;
+  color: #000000;
 }
 /* line 916, ../scss/default.scss */
 .quote .author {
-  font-size: 24px;
+  font-size: 18px;
   position: absolute;
   bottom: 80px;
   line-height: 1.4;
+}
+
+.styled-button {
+  border:none;
+  font-family:'Ubuntu', sans-serif;
+  font-size:24px;
+  font-weight:700;
+  height:32px;
+  padding:20px 20px;
+  -webkit-border-radius: 0 10px 10px 0;
+  -moz-border-radius: 0 10px 10px 0;
+  -ms-border-radius: 0 10px 10px 0;
+  -o-border-radius: 0 10px 10px 0;
+  border-radius: 0 10px 10px 0;
+  background: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #e6e6e6), color-stop(100%, #e6e6e6)) no-repeat;
+  background: -webkit-linear-gradient(left, #e6e6e6, #e6e6e6) no-repeat;
+  background: -moz-linear-gradient(left, #e6e6e6, #e6e6e6) no-repeat;
+  background: -o-linear-gradient(left, #e6e6e6, #e6e6e6) no-repeat;
+  background: linear-gradient(left, #e6e6e6, #e6e6e6) no-repeat;
+  -webkit-background-size: 0% 100%;
+  -moz-background-size: 0% 100%;
+  -o-background-size: 0% 100%;
+  background-size: 0% 100%;
+  -webkit-transition: all 0.5s ease-out;
+  -webkit-transition-delay: 0.5s;
+  -moz-transition: all 0.5s ease-out 0.5s;
+  -o-transition: all 0.5s ease-out 0.5s;
+  transition: all 0.5s ease-out 0.5s;
 }
 
 /* line 925, ../scss/default.scss */
@@ -1483,4 +1597,5 @@ aside.gdbar img {
   pre, code {
     font-family: monospace !important;
   }
+
 }

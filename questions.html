@@ -1,0 +1,417 @@
+<!--
+Google IO 2012/2013 HTML5 Slide Template
+
+Authors: Eric Bidelman <ebidel@gmail.com>
+         Luke Mahé <lukem@google.com>
+
+URL: https://code.google.com/p/io-2012-slides
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">-->
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+  <!--This one seems to work all the time, but really small on ipad-->
+  <!--<meta name="viewport" content="initial-scale=0.4">-->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="stylesheet" media="all" href="theme/css/default.css">
+  <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="theme/css/phone.css">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin"> 
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->
+  <script data-main="js/slides" src="js/require-1.0.8.min.js"></script>
+  <!--MathJax-->
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    TeX: {
+      extensions: ["cancel.js"],
+      Macros: {
+        d: '\\text{d}',
+        e: '\\mathbf{e}',
+        x: '\\mathbf{x}',
+        u: '\\mathbf{u}',
+        C: '\\mathbb{C}',
+        A: '\\mathbf{A}',
+        B: '\\mathbf{B}',
+        J: '\\mathbf{J}',
+        L: '\\mathcal{L}',
+        N: '\\mathcal{N}',
+        n: '\\mathbf{n}',
+        i: '\\text{i}',
+        divv: '\\mathop{\\rm div}\\nolimits',
+        curl: '\\mathop{\\rm curl}\\nolimits',
+      }
+    },
+    skipStartupTypeset: true
+  });
+  </script>
+
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+  });
+  </script>
+
+  <script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+    <script type="text/javascript">
+        document.addEventListener('slideenter', function(e) {
+            MathJax.Hub.Queue(["Typeset", MathJax.Hub, e.target]);
+            var next = document.getElementsByClassName('next')[0];
+            if (next) {
+                MathJax.Hub.Queue(["Typeset", MathJax.Hub, next]);
+            }
+            var past = document.getElementsByClassName('past')[0];
+            if (past) {
+                MathJax.Hub.Queue(["Typeset", MathJax.Hub, past]);
+            }
+        });
+  </script>
+	  <!--MathJax end-->
+	<script>
+    function setColor(btn){
+			var button = document.getElementById(btn);
+			var time = parseFloat(document.getElementById(btn).value);
+			setTimeout(function(){button.style.backgroundColor = "rgb(202, 60, 60)";}, time*1000);
+    }
+	</script>
+</head>
+<body style="opacity: 0">
+
+<slides class="layout-widescreen">
+
+  <slide class="title-slide segue light">
+    <aside class="gdbar"><img src="images/uio-logo-ny.png"></aside>
+    <!-- The content of this hgroup is replaced programmatically through the slide_config.json. -->
+    <hgroup class="auto-fadein">
+      <h1 data-config-title><!-- populated from slide_config.json --></h1>
+    </hgroup>
+  </slide>
+  
+  <slide class="light">
+    <aside class="gdbar left bottom">
+      <input type="submit" value="3" id="b1" class="styled-button" onclick="setColor('b1')"/>
+    </aside>
+    <hgroup>
+      <h2>Rules</h2>
+    </hgroup>
+    <article>
+      <ul>
+        <li>15 questions, 5 per category</li>
+        <li>Categories:
+          <ul>
+		  <li><font color="33cace">Warm-up</font></li>
+		  <li><font color="3393ce">Year 2014</font></li>
+		  <li><font color="33ce4d">Puzzles</font></li>
+          </ul>
+        </li>
+        <li>1 point per correct answer to question</li>
+	<li>Time to answer the question shown on the button in the lower left corner</li>
+	<li>Time-out signaled by button turning red</li>
+      </ul>
+    </article>
+  </slide>
+
+  <!-- Begin warm-up category -->
+  <slide class="segue torq quote nobackground">
+    <aside class="gdbar right bottom"><img src="images/santa.png"></aside>
+		<aside class="gdbar left bottom">
+			<input type="submit" value="45" id="b1" class="styled-button" onclick="setColor('b1')"/>
+    </aside>
+    <article class="flexbox vleft auto-fadein smaller">
+      <p>
+      <b>Lady Astor</b>: If you were my husband, I'd poison your tea.<br>
+      <b>___</b>: Nancy, if I were your husband, I'd drink it.
+      </p>
+      <p class="question">
+	Which WWII politician responded this way?
+      </p>
+    </article>
+  </slide>
+
+  <slide class="segue torq quote nobackground">
+    <aside class="gdbar right bottom"><img src="images/santa.png"></aside>
+		<aside class="gdbar left bottom">
+			<input type="submit" value="45" id="b2" class="styled-button" onclick="setColor('b2')"/>
+    </aside>
+    <article class="flexbox vleft auto-fadein smaller">
+      <p>
+      <center>
+      A <b>light year</b> is to <b>distance</b> as <b>electronvolt</b> is to ___.
+      </center>
+      </p>
+      <p class="question">
+	Fill in the physical quantity.
+      </p>
+    </article>
+  </slide>
+
+  <slide class="segue torq quote nobackground">
+    <aside class="gdbar right bottom"><img src="images/santa.png"></aside>
+		<aside class="gdbar left bottom">
+			<input type="submit" value="45" id="b3" class="styled-button" onclick="setColor('b3')"/>
+    </aside>
+    <article class="flexbox vleft auto-fadein smaller">
+      <p class="question">
+	What kind of wood was the Kon-Tiki raft made of?
+      </p>
+    </article>
+  </slide>
+
+  <slide class="segue torq quote nobackground">
+    <aside class="gdbar right bottom"><img src="images/santa.png"></aside>
+		<aside class="gdbar left bottom">
+			<input type="submit" value="45" id="b4" class="styled-button" onclick="setColor('b4')"/>
+    </aside>
+    <article class="flexbox vleft auto-fadein smaller">
+      <p class="question">
+	What is the most frequent colour used on state flags? 
+      </p>
+    </article>
+  </slide>
+
+  <slide class="segue torq quote nobackground">
+    <aside class="gdbar right bottom"><img src="images/santa.png"></aside>
+		<aside class="gdbar left bottom">
+			<input type="submit" value="45" id="b5" class="styled-button" onclick="setColor('b5')"/>
+    </aside>
+    <article class="flexbox vleft auto-fadein smaller">
+	<p>
+	<b>Abebe Bikila</b>, the winner of marathon at the Olympic games in
+       	1960 and 1964 astonished the world by getting his first gold medal running
+       	barefoot.
+	</p>
+	<p class="question">
+	  What was the name of his footwear sponsor?  
+	</p>
+	<p class="hint">
+	hint: There really was one!
+	</p>
+    </article>
+  </slide>
+
+  <!-- Begin 2014 category -->
+  <slide class="segue blue quote nobackground">
+    <aside class="gdbar right bottom"><img src="images/ball.png"></aside>
+		<aside class="gdbar left bottom">
+			<input type="submit" value="45" id="b6" class="styled-button" onclick="setColor('b6')"/>
+    </aside>
+    <article class="flexbox vleft auto-fadein smaller">
+      <p class="question">
+	Which country won the most medals at the 2014 Winter Olympic games held
+	between 7th - 23rd February in Sochi?
+      </p>
+    </article>
+  </slide>
+
+  <slide class="segue blue quote nobackground">
+    <aside class="gdbar right bottom"><img src="images/ball.png"></aside>
+		<aside class="gdbar left bottom">
+			<input type="submit" value="45" id="b7" class="styled-button" onclick="setColor('b7')"/>
+    </aside>
+    <article class="flexbox vleft auto-fadein smaller">
+      <p>
+	During her visit to Sweden in Febraury 2014, Siv Jensen got a gift from
+	her Swedish collegues which was supposed to help Norway "find its
+	legs". 
+      </p>
+      <p class="question">
+	What was the gift?
+      </p>
+      <p class="hint">
+      hint: Previous question.
+      </p>
+    </article>
+  </slide>
+
+  <slide class="segue blue quote nobackground">
+    <aside class="gdbar right bottom"><img src="images/ball.png"></aside>
+		<aside class="gdbar left bottom">
+			<input type="submit" value="45" id="b8" class="styled-button" onclick="setColor('b8')"/>
+    </aside>
+    <article class="flexbox vleft auto-fadein smaller">
+      <p>
+       	At the end of 2013 this music video became the first video in the
+       	history of YouTube to reach one billion views. In March 2014 the view
+       	count of the video exceeded two billion views.
+      </p>
+      <p class="question">
+      	What is the name of the song?
+	<center>
+	<audio controls>
+	  <source src="sounds/sound.mp3" type="audio/mpeg">
+	</audio> 
+	</center>
+      </p>
+      <p class="hint">
+      Those who have not seen it get a bonus point as a thank you.
+      </p>
+    </article>
+  </slide>
+
+  <slide class="segue blue quote nobackground">
+    <aside class="gdbar right bottom"><img src="images/ball.png"></aside>
+		<aside class="gdbar left bottom">
+			<input type="submit" value="45" id="b9" class="styled-button" onclick="setColor('b9')"/>
+    </aside>
+    <article class="flexbox vleft auto-fadein smaller">
+      <p>
+      In November 2014, <b>Philae</b> lander successfully made the first controlled
+      touchdown on a comet <b>67P/Churyumov–Gerasimenko</b>.
+      </p>
+      <p class="question">
+       	What is the name of the space probe from which the lander was launched.
+      </p>
+      <p class="hint">
+      hint: Jean Francois Champollion 
+      </p>
+    </article>
+  </slide>
+
+  <slide class="segue blue quote nobackground">
+    <aside class="gdbar right bottom"><img src="images/ball.png"></aside>
+		<aside class="gdbar left bottom">
+			<input type="submit" value="45" id="b10" class="styled-button" onclick="setColor('b10')"/>
+    </aside>
+    <article class="flexbox vleft auto-fadein smaller">
+      <p>
+	The Trafalgar Square Christmas tree is gifted to Londoners by the
+	capital city of a country which in year 2014 celebrated 200 years
+	of its independence.
+      </p>
+      <p class="question">
+       	Name that country.
+      </p>
+    </article>
+  </slide>
+
+  <!-- Begin Puzzle category -->
+  <slide class="segue green quote nobackground">
+    <aside class="gdbar right bottom"><img src="images/tree.png"></aside>
+		<aside class="gdbar left bottom">
+			<input type="submit" value="120" id="b11" class="styled-button" onclick="setColor('b11')"/>
+    </aside>
+    <article class="flexbox vleft auto-fadein smaller">
+	<p>
+    	<center>
+	    <img src="images/fib.svg" alt="" title="" width=350px height=350px>
+	</center>
+	Examples of this curve can be found in many places in nature.
+	</p>
+	<p class="question">
+	What is the length of the plotted curve? In $u$ units.
+	</p>
+    	<center>
+	    <img src="images/snail.png" alt="" title="" width=125px height=125px>
+	</center>
+    </article>
+  </slide>
+
+  <slide class="segue green quote nobackground">
+    <aside class="gdbar right bottom"><img src="images/tree.png"></aside>
+		<aside class="gdbar left bottom">
+			<input type="submit" value="120" id="b12" class="styled-button" onclick="setColor('b12')"/>
+    </aside>
+    <article class="flexbox vleft auto-fadein smaller">
+	<p>   
+	The eigenfunctions of the following eigenvalue problem are used in the
+       	logo of certain company which develops scientific software.
+	\[
+	\begin{align} 
+	-\Delta u &= \lambda u &&\text{ in }\Omega\\
+	        u &= 0 &&\text{ on }\partial\Omega\\
+	\end{align}
+	\]
+	</p>
+    	<center>
+	    <img src="images/domain.svg" alt="" title="" width=200px height=200px
+	align="middle">
+	</center>
+	<p class="question">
+	What is the name of the company?
+	</p>
+    </article>
+  </slide>
+
+  <slide class="segue green quote nobackground">
+    <aside class="gdbar right bottom"><img src="images/tree.png"></aside>
+		<aside class="gdbar left bottom">
+			<input type="submit" value="120" id="b13" class="styled-button" onclick="setColor('b13')"/>
+    </aside>
+    <article class="flexbox vleft auto-fadein smaller">
+	    <p class="question">
+	      What is the relation ($\lt, \gt, \geq, \dots$) between the
+	      largest and the smallest even prime number?
+	    </p>
+    </article>
+  </slide>
+
+  <slide class="segue green quote nobackground">
+    <aside class="gdbar right bottom"><img src="images/tree.png"></aside>
+		<aside class="gdbar left bottom">
+			<input type="submit" value="120" id="b14" class="styled-button" onclick="setColor('b14')"/>
+    </aside>
+    <article class="flexbox vleft auto-fadein smaller">
+    	<center>
+	    <img src="images/scales.png" alt="" title="" width=200px height=200px
+	align="middle">
+	</center>
+	<p>
+	You are given 9 balls and a balance scale. Of the nine balls 8 have
+	the same weight and one ball is heavier.
+	</p>
+	<p class="question">
+       	  What is the smallest number of measurements that guarantees that you 
+	  always identify the heavier ball?
+	</p>
+    </article>
+  </slide>
+
+  <slide class="segue green quote nobackground">
+    <aside class="gdbar right bottom"><img src="images/tree.png"></aside>
+		<aside class="gdbar left bottom">
+			<input type="submit" value="120" id="b15" class="styled-button" onclick="setColor('b15')"/>
+    </aside>
+    <article class="flexbox vleft auto-fadein smaller">
+	<p>
+	We define $\mathbf B^n$,a uniball in $\mathbb R^n$, as a set of points
+       	$\mathbf x\in \mathbb R^n$ whose Euclidean distance from the origin 
+	is less than one. Further let $V_n := \text{vol}(\mathbf B^n)$. Then
+	\[
+	\begin{align}
+	&B^1, \text{biunit interval,} &&V_1 = 2\\
+	&B^2, \text{unit disc,} &&V_2 = \pi\\
+	&B^3, \text{unit sphere,} &&V_3 = 4\pi/{3}
+	\end{align}
+	\]
+	</p>
+	<p class="question">
+	Is it true that for any $n$ it holds that
+	$V_n \lt V_{n+1}$ ?
+	</p>
+    </article>
+  </slide>
+
+</slides>
+
+<script>
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-XXXXXXXX-1']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+<!--[if IE]>
+  <script src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js"></script>
+  <script>CFInstall.check({mode: 'overlay'});</script>
+<![endif]-->
+</body>
+</html>

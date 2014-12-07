@@ -1,0 +1,81 @@
+\documentclass[a4paper,11pt]{article}
+\pdfoptionpdfminorversion=5
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{multicol}
+\usepackage{xcolor,colortbl}
+\usepackage{datetime}
+\usepackage{xfrac}
+
+\newcommand{\mc}[2]{\multicolumn{#1}{c}{#2}}
+\definecolor{Gray}{gray}{0.85}
+\newcolumntype{a}{>{\columncolor{Gray}}c}
+\newcolumntype{b}{>{\columncolor{white}}c}
+\newcolumntype{R}{>{\columncolor{lime}}c}
+\newcolumntype{B}{>{\columncolor{pink}}c}
+
+
+\usepackage[numbers]{natbib}
+
+\usepackage[utf8]{inputenc}
+\usepackage{array,multirow,graphicx}
+\usepackage{graphics}
+\usepackage{color}
+\usepackage{ifpdf}
+\ifpdf
+\DeclareGraphicsRule{*}{mps}{*}{}
+\fi
+\usepackage[utf8]{inputenc}
+
+\hoffset = 0pt
+\voffset = 0pt
+\oddsidemargin = 0pt
+\headheight = 15pt
+\footskip = 30pt
+\topmargin = 0pt
+\marginparsep = 5pt
+\headsep =25pt
+\marginparwidth = 54pt
+\marginparpush = 7pt
+\textheight = 621pt %621
+\textwidth = 500pt
+
+% Default fixed font does not support bold face
+\DeclareFixedFont{\ttb}{T1}{txtt}{bx}{n}{12} % for bold
+\DeclareFixedFont{\ttm}{T1}{txtt}{m}{n}{12}  % for normal
+
+\newcommand{\I}{\ensuremath{\mathbb{I}}}
+\newcommand{\R}{\ensuremath{\mathbb{R}}}
+
+\newcommand{\norm}[1]{\ensuremath{\lvert #1 \rvert}}
+\newcommand{\Norm}[1]{\ensuremath{\|#1\|}}
+\newcommand{\Vnorm}[1]{\ensuremath{\|#1\|_{V}}}
+\newcommand{\inner}[2]{\ensuremath{\langle#1, #2 \rangle}}
+\newcommand{\Inner}[2]{\ensuremath{\left(#1, #2\right)}}
+
+\newcommand{\Div}[1] {\ensuremath{\text{div}#1}}
+\newcommand{\Grad}[1]{\ensuremath{\text{grad}#1}}
+\newcommand{\Curl}[1]{\ensuremath{\text{curl}#1}}
+\newcommand{\jump}[1]{\ensuremath{[\![#1]\!]} }
+
+\newcommand{\W}[1]{\ensuremath{w\!\left[#1\right]\!}}
+\newcommand{\E}[1]{\ensuremath{\epsilon \!\left[#1\right]\!}}
+\newcommand{\T}[1]{\ensuremath{\sigma \! \left[#1\right]\!}}
+
+\newcommand{\Tr}[1]{\ensuremath{\text{tr}#1}}
+\newcommand*{\defeq}{\mathrel{\vcenter{\baselineskip0.5ex \lineskiplimit0pt
+                     \hbox{\scriptsize.}\hbox{\scriptsize.}}}%
+                     =} 
+\usepackage{diagbox}
+\usepackage{rotating}
+\usepackage{multirow}
+\begin{document}
+
+\begin{figure}
+\includegraphics[scale=0.5]{domain.1}
+\includegraphics[scale=0.5]{fib.1}
+\end{figure}
+
+\end{document}
